@@ -45,14 +45,12 @@ CREATE TABLE clients (
 
 The project consists of the following files:
 
-- `index.jsp`: The home page with links to add, update, delete, and view clients.
 - `add_client.jsp`: The page to add a new client.
 - `update_client.jsp`: The page to update an existing client.
 - `delete_client.jsp`: The page to delete a client.
 - `view_clients.jsp`: The page to view all clients.
 - `Client.java`: The Java Bean representing the client entity.
 - `ClientDAO.java`: The Data Access Object (DAO) for performing database operations.
-- `DBConnection.java`: Utility class for establishing database connections.
 - `AddClientServlet.java`: The servlet handling client addition.
 - `UpdateClientServlet.java`: The servlet handling client updates.
 - `DeleteClientServlet.java`: The servlet handling client deletion.
@@ -73,14 +71,9 @@ git clone https://github.com/yourusername/client-management-system.git
 
 3. **Configure Database Connection:**
 
-- Open `DBConnection.java`.
-- Update the following constants with your database details:
+- Open `ClientDAO.java`.
+- Update the constants with your database details
 
-```java
-private static final String URL = "jdbc:mysql://localhost:3306/client_management";
-private static final String USERNAME = "root";
-private static final String PASSWORD = "root";
-```
 
 4. **Build and Deploy the Project:**
 
@@ -96,7 +89,6 @@ private static final String PASSWORD = "root";
 
 #### JSP Files
 
-- **index.jsp**: The main page with navigation links.
 - **add_client.jsp**: Form to add a new client.
 - **update_client.jsp**: Form to update an existing client.
 - **delete_client.jsp**: Form to delete a client.
@@ -110,9 +102,6 @@ private static final String PASSWORD = "root";
 
 - **ClientDAO.java**: Contains methods for database operations (add, update, delete, retrieve clients).
 
-#### Utilities
-
-- **DBConnection.java**: Manages the connection to the MySQL database.
 
 #### Servlets
 
